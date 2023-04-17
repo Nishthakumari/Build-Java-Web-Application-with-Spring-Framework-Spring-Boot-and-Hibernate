@@ -1,10 +1,13 @@
 package com.in28minutes.springboot.myfirstwebapp.todo;
 
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class todoService {
+@Service
+public class TodoService {
 
     private static List<Todo> todos = new ArrayList<>();
 
