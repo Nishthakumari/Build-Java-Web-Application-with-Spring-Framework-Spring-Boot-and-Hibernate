@@ -16,10 +16,7 @@ public class LoginController {
 
 
     @RequestMapping("/login")
-    public String gotoLoginPage(@RequestParam String name, ModelMap model){
-
-        logger.debug("Request param is {}", name);
-        model.put("name", name);
+    public String gotoLoginPage(){
 
         return "login";
     }
