@@ -27,7 +27,8 @@ public class TodoController {
     @RequestMapping("/list-todos")
     public String listAllTodos(ModelMap model){
 
-        List<Todo> todos = todoService.findByUsername("in28minutes");
+        String username = getLoggedInUsername(model);
+        List<Todo> todos = todoService.findByUsername(username);
 
         model.addAttribute("todos", todos);
 
