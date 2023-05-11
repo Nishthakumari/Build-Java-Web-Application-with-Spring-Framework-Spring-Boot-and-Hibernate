@@ -1,5 +1,5 @@
 # Todo application (made with Spring Boot)
-#### Simple blogging platform project I made to learn Spring framework.
+#### Simple todo application project I made to learn Spring framework.
 
 
 ## About the project
